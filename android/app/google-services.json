@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "905696029618",
+    "firebase_url": "https://cp-app-36aac.firebaseio.com",
+    "project_id": "cp-app-36aac",
+    "storage_bucket": "cp-app-36aac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905696029618:android:b0292d65309e3392be92ab",
+        "android_client_info": {
+          "package_name": "cerclepolytechnique.cp_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905696029618-rf2thcogbpibpmvrrl6g26bbd5hgtc0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTZ2WDUGt2f_D-OFB3XWzRkFRZJn9M_3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905696029618-rf2thcogbpibpmvrrl6g26bbd5hgtc0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
