@@ -93,7 +93,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
   Widget build(BuildContext context) {
     EdgeInsets devicePadding = MediaQuery.of(context).viewPadding;
     return new Scaffold(
-        backgroundColor: Colors.grey[800],
+        backgroundColor: kColor,
         body: Stack(
           children: <Widget>[
             _showForm(),
@@ -199,7 +199,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
               hintStyle: TextStyle(color: Colors.white),
               icon: new Icon(
                 Icons.mail,
-                color: kPrimaryColor,
+                color: kAccent,
               ),
               border: InputBorder.none
           ),
@@ -227,7 +227,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
               focusColor: Colors.white,
               icon: new Icon(
                 Icons.lock,
-                color: kPrimaryColor,
+                color: kAccent,
               ),
               border: InputBorder.none
           ),

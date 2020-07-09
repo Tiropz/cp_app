@@ -5,6 +5,11 @@ import 'package:cp_app/services/authentication.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:cp_app/models/todo.dart';
 import 'dart:async';
+import 'package:cp_app/pages/calendar_page.dart';
+import 'package:cp_app/pages/param_page.dart.';
+import 'package:cp_app/pages/contact_page.dart.';
+import 'package:cp_app/pages/news_page.dart.';
+
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.auth, this.userId, this.logoutCallback})
@@ -20,9 +25,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
-
   //bool _isEmailVerified = false;
-
   int _currentIndex = 0;
   PageController _pageController;
 
@@ -50,18 +53,20 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Colors.grey[800],
       body: SizedBox.expand(
         child: PageView(
+
           controller: _pageController,
           onPageChanged: (index) {
             setState(() => _currentIndex = index);
           },
           children: <Widget>[
-            Container(color: Color.fromRGBO(58, 66, 86, 1)),
-            Container(color: Colors.grey[800],),
-            Container(color: Colors.grey[800],),
-            Container(color: Colors.grey[800],),
+            News(),
+            Calendar(),
+            Contact(),
+            Param(),
           ],
         ),
       ),
